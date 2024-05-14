@@ -1,6 +1,6 @@
 # washing_machine
 
-Pin Definitions (pin_list.h)
+*Pin Definitions (pin_list.h)*
 
 Purpose: Defines constants for pin assignments used throughout the project.
 Details:
