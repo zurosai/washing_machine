@@ -126,7 +126,7 @@ Push Buttons (3): - Buttons for selection, pause/resume, and system power contro
 
 **Diagram**
 
-![Captura de pantalla 2024-05-13 a la(s) 7 44 26 p m  (2)](https://github.com/zurosai/washing_machine/assets/169511947/acc64f37-883a-4cee-b991-dca00150dbb8)
+![Captura de pantalla 2024-05-13 a la(s) 7 44 26 p m](https://github.com/zurosai/washing_machine/assets/169511947/5fed507c-158f-4092-8a83-a9a5a0dfbcaa)
 
 
 
