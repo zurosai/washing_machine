@@ -7,11 +7,17 @@
 Details:
 
 *PIN_A* to *PIN_G*: Define the digital pins connected to the seven-segment rotary LED display (indices correspond to LED segments A-G).
+
 *ANALOG_PIN*: Defines the analog pin used for reading the potentiometer value.
+
 *LED_PIN_SELECTION*: Defines the digital pin connected to the LED for selection indication.
+
 *SWITCH_PIN_SELECTION*: Defines the digital pin connected to the button for selection control.
+
 *LED_PIN_PAUSE*: Defines the digital pin connected to the LED for pause indication.
+
 *SWITCH_PIN_PAUSE*: Defines the digital pin connected to the button for pausing the rotary LED function.
+
 *SWITCH_PIN_ON_OFF*: Defines the digital pin connected to the button for system power control.
 
 Recommendations:
