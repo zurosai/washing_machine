@@ -8,6 +8,8 @@ The system also features dedicated buttons for selection, pause/resume, and syst
 
 By separating the rotary LED control logic into its own library (crotary_led.h), the code promotes better organization and potential reusability. This modular approach makes the code easier to understand, maintain, and potentially integrate into other projects that require similar rotary LED control functionality. It allows developers to focus on the specific application logic without needing to rewrite the core LED control functions.
 
+<br>
+
 **Pin Definitions (pin_list.h)**
 
 *Purpose*: Defines constants for pin assignments used throughout the project.
