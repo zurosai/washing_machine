@@ -24,7 +24,11 @@ Recommendations:
 Consider using a more descriptive naming convention for pins (e.g., ROTARY_LED_PIN_A, SELECTION_LED_PIN).
 If pin assignments are configurable, provide comments on how to modify these definitions.
 
-Rotary LED Library (crotary_led.h)
+
+
+
+
+*Rotary LED Library (crotary_led.h)*
 
 Purpose: Provides functions for controlling the rotary LED display.
 Details:
