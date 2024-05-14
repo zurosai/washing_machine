@@ -31,10 +31,8 @@ Details:
 
 *SWITCH_PIN_ON_OFF*: Defines the digital pin connected to the button for system power control.
 
-
-
-
-
+<br>
+<br>
 
 **Rotary LED Library (crotary_led.h)**
 
@@ -62,7 +60,8 @@ Details:
 
 *rotary_led()*: Calls rl_read_value to determine the active LED(s), turns them on, delays briefly, and then turns them off.
 
-
+<br>
+<br>
 
 **LED and Switch Control (led.c)**
 
@@ -73,6 +72,9 @@ Details:
 *rl_construct, rl_init, rl_read_value, rl_turn_led_on,* and *rl_clear* are included from crotary_led.h.
 
 *rotary_led()*: Calls rl_read_value to determine the active LED(s), turns them on, delays briefly, and then turns them off. Prints debug messages based on the read value.
+
+<br>
+<br>
 
 **Main Program (test.c)**
 
