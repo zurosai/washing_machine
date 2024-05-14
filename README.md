@@ -1,5 +1,13 @@
 # washing_machine
 
+**Description**
+
+This code implements a versatile system that controls a rotary LED display and interacts with buttons to provide user control.  The rotary LED display, composed of seven individual segments (A-G), can be manipulated by an analog input, typically a potentiometer. By adjusting the potentiometer, users can influence which segments light up, creating various patterns or numerical displays.
+
+The system also features dedicated buttons for selection, pause/resume, and system power control. The selection button allows users to interact with specific functionalities within the system, potentially changing the behavior of the rotary LED display based on user choices. The pause/resume button provides a way to temporarily halt the updating of the rotary LED display, giving users control over the display's responsiveness. Finally, the system power control button allows users to turn the entire system on or off.
+
+By separating the rotary LED control logic into its own library (crotary_led.h), the code promotes better organization and potential reusability. This modular approach makes the code easier to understand, maintain, and potentially integrate into other projects that require similar rotary LED control functionality. It allows developers to focus on the specific application logic without needing to rewrite the core LED control functions.
+
 **Pin Definitions (pin_list.h)**
 
 *Purpose*: Defines constants for pin assignments used throughout the project.
