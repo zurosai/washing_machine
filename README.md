@@ -99,3 +99,34 @@ Initializes rotary LED pins and ADC.
 Enters an infinite loop that continuously reads switch states and performs actions based on them.
 
 *System power control*: Toggles system_on on power button press.
+
+<br>
+<br>
+
+**Required Components**:
+
+Microcontroller Board: - A microcontroller board Raspberry Pi Pico or any board compatible with Pico C/C++ libraries.
+
+Rotary LED Display: - A seven-segment rotary LED display module.
+
+Potentiometer: - A linear potentiometer with a resistance value suitable for your microcontroller's analog input range (e.g., 10kΩ).
+
+Resistors: - Two resistors (values depend on LED forward voltage and desired current) for current limiting on the LEDs.
+
+Jumper Wires: - A set of jumper wires for connecting components.
+
+Breadboard: - A breadboard can be helpful for prototyping and experimenting with the circuit.
+
+LEDs (2-3): - LEDs for selection and pause indication (optional, depending on desired functionality).
+
+Push Buttons (3): - Buttons for selection, pause/resume, and system power control (optional, depending on desired functionality).
+
+<br>
+<br>
+
+**Diagram**
+
+![Captura de pantalla 2024-05-13 a la(s) 7 44 26 p m  (2)](https://github.com/zurosai/washing_machine/assets/169511947/acc64f37-883a-4cee-b991-dca00150dbb8)
+
+
+
