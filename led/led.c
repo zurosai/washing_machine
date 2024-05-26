@@ -58,17 +58,23 @@ void rotary_led()
     uint32_t val = rl_read_value();
                 
     if(val==256)
-      printf("Delicado\n");
+      //printf("Delicado\n");
+      uart_puts(UART_ID, "Ciclo delicado");
     if(val==1024)
-      printf("Blanco\n");
+      //printf("Blanco\n");
+      uart_puts(UART_ID, "Ropa blanca");
     if(val==2097152)
-      printf("Pesado\n");
+      //printf("Pesado\n");
+      uart_puts(UART_ID, "Carga pesada");
     if(val==131072)
-      printf("Normal\n");
+      //printf("Normal\n");
+      uart_puts(UART_ID, "Lavado normal");
     if(val==65536)
-      printf("Rápido\n");
+      //printf("Rápido\n");
+      uart_puts(UART_ID, "Ciclo rapido");
     if(val==2048)
-      printf("Color\n");
+      //printf("Color\n");
+      uart_puts(UART_ID, "Ropa de color");
     
     rl_turn_led_on();
     sleep_ms(rl_delay);
