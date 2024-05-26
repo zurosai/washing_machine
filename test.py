@@ -12,6 +12,8 @@ oled = SSD1306_I2C(oled_width, oled_height, i2c)
 # Configuración UART
 uart = UART(0, baudrate=9600, tx=Pin(0), rx=Pin(1))
 
+data = ""
+
 while True:
     oled.fill(0)
     oled.text(data, 0, 0)
@@ -23,5 +25,5 @@ while True:
         if data:
             oled.fill(0)
             oled.text(data, 0, 0)
-            oled.show
+            oled.show()
             print("Recibido:", data)
