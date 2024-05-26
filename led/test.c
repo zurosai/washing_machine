@@ -4,12 +4,14 @@
 #include "pin_list.h"
 #include "crotaryled.h"
 #include "hardware/adc.h"
+#include "hardware/uart.h"
 
 // LED states
 int led_state = 0; // LED 2 (selection indicator) state variable
-int is_paused = 0; // Pause falg
+int is_paused = 0; // Pause flag
 int blink_state = 0; // Blink flag
 int system_on = 0; // System state (1:on, 0:off)
+
 
 int main() 
   {
@@ -43,6 +45,13 @@ int main()
     rl_construct(pins);
     rl_init();
 
+    // Inicializa el UART
+    uart_init(UART_ID, BAUD_RATE);
+    gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
+    gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
+
+    //uart_puts(UART_ID, "Hola, este es un mensaje enviado a traves de una serializacion UART");
+
     while(true) 
     {
         // Read switch states
@@ -58,6 +67,12 @@ int main()
           }
 
         gpio_put(LED_PIN_ON_OFF, system_on);
+
+        if (uart_is_readable(UART_ID)) 
+        {
+            char ch = uart_getc(UART_ID);
+            uart_putc(UART_ID, ch);
+        }
 
         if(system_on)
           {
