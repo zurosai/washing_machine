@@ -25,5 +25,3 @@ while True:
             oled.text(data, 0, 0)
             oled.show
             print("Recibido:", data)
-            # Envía un mensaje de vuelta
-            #uart.write("Hola desde el Pico W (MicroPython)!\n")
