@@ -128,5 +128,92 @@ Push Buttons (3): - Buttons for selection, pause/resume, and system power contro
 
 ![Captura de pantalla 2024-05-13 a la(s) 7 44 26 p m](https://github.com/zurosai/washing_machine/assets/169511947/5fed507c-158f-4092-8a83-a9a5a0dfbcaa)
 
+<br>
+<br>
 
+**test.py**
 
+Functionality
+
+This script demonstrates ESP32 communication with a server over WiFi and displaying information on an OLED display. It is directly related to washing machine output through UART protocol.
+
+<br>
+<br>
+
+**Libraries**
+
+_machine_: Provides access to hardware components like I2C, UART, and pins.
+
+_ssd1306_: Controls the OLED display (SSD1306 driver).
+
+_time_: For delays using sleep.
+
+_socket_: Enables network communication using sockets.
+
+<br>
+<br>
+
+**Configuration**
+
+Sets up I2C communication for the OLED display.
+
+Defines display dimensions (oled_width and oled_height).
+
+Initializes the OLED display (oled).
+
+Configures UART communication for serial communication.
+
+<br>
+<br>
+
+**Functions**
+
+_test_wifi_: Connects the Raspberry Pico to a WiFi network with the specified ssid and password.
+
+_send_message_to_server_: Takes a message, establishes a socket connection to a server at the provided host and port, sends the message, receives a response, and prints it.
+
+_divide_in_paragraphs_: Splits a text string into a list of paragraphs with a maximum length of length characters.
+
+<br>
+<br>
+
+**Main Loop**
+
+Continuously clears and updates the OLED display:
+
+  Shows "Wi-Fi conectado" (WiFi connected).
+  
+  Displays the value of data.
+  
+  Shows "Timer " (to receive a timer from the Raspberry).
+  
+  Splits the response2 string (which is initially empty) into paragraphs and displays up to 3 of them.
+  
+  Checks if there's any data received through UART.
+  
+    If there's data, reads it into the data variable.
+  
+  Sends the data to the server using send_message_to_server.
+  
+  Updates the OLED display with the received and server response data.
+
+<br>
+<br>
+
+**Overall Flow**
+
+The script initializes communication with the OLED display and UART.
+
+The main loop continuously:
+
+  Updates the OLED display with static messages and empty data placeholders.
+  
+  Checks for incoming data on UART.
+  
+  If data is received on UART:
+  
+  The data is stored in the data variable.
+  
+  The data is sent to a server.
+  
+  The OLED display is updated with the received data and the server's response (if any).
