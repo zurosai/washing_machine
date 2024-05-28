@@ -121,6 +121,8 @@ LEDs (2-3): - LEDs for selection and pause indication (optional, depending on de
 
 Push Buttons (3): - Buttons for selection, pause/resume, and system power control (optional, depending on desired functionality).
 
+OLED Display i2c (128x64): Device used to display the status of the machine.
+
 <br>
 <br>
 
@@ -131,7 +133,7 @@ Push Buttons (3): - Buttons for selection, pause/resume, and system power contro
 <br>
 <br>
 
-**test.py**
+# test.py
 
 Functionality
 
