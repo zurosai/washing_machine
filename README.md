@@ -219,3 +219,64 @@ The main loop continuously:
   The data is sent to a server.
   
   The OLED display is updated with the received data and the server's response (if any).
+
+# server.py
+
+**Description**
+
+This code implements a server that receives messages from a client, processes them, and sends a response.
+
+<br>
+<br>
+
+**Functionality**
+
+    process_message(message):
+
+Analyzes the received message and returns a response based on the message content.
+
+    start_server():
+    
+Creates a server socket and configures it to listen on a specific IP address and port.
+
+Accepts incoming connections from clients.
+
+For each connected client:
+
+Receives a message from the client.
+
+Processes the message using the process_message function.
+
+Sends the response to the client.
+
+Closes the connection with the client.
+
+<br>
+<br>
+
+**Code Structure**
+
+    process_message(message): 
+    
+Analyzes the message and returns a response.
+
+    start_server(): 
+
+Creates and runs the server.
+    
+    Main block (if __name__ == "__main__":):
+    
+Calls the start_server() function to start the server.
+
+<br>
+<br>
+
+**Implementation Details**
+
+Uses the socket library to create sockets and manage network communication.
+
+Defines an IP address (host) and a port (port) for the server.
+
+Sets a limit of one connection at a time (server_socket.listen(1)).
+
+Handles network errors and connection closing.
