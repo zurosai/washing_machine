@@ -222,6 +222,9 @@ The main loop continuously:
 
 # server.py
 
+
+![Diagrama sin título drawio](https://github.com/zurosai/washing_machine/assets/169511947/03bfeecf-eab1-4aa9-b249-b774aa60f92f)
+
 **Description**
 
 This code implements a server that receives messages from a client, processes them, and sends a response.
@@ -280,3 +283,6 @@ Defines an IP address (host) and a port (port) for the server.
 Sets a limit of one connection at a time (server_socket.listen(1)).
 
 Handles network errors and connection closing.
+
+
+
